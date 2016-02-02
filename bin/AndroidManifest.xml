@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hungryanimals.john"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        
+        android:allowBackup="true"
+        android:icon="@drawable/f1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+      
+        <activity            
+            android:name="com.hungryanimals.john.MenuGFX"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity            
+            android:name="com.hungryanimals.john.Accelerate"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.hungryanimals.john.ACCELERATE" />
+                <category android:name="android.intent.category.Default" />
+            </intent-filter>
+        </activity>
+        <activity            
+            android:name="com.hungryanimals.john.AboutGFX"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.hungryanimals.john.ABOUTGFX" />
+                <category android:name="android.intent.category.Default" />
+            </intent-filter>
+        </activity>
+        <activity            
+            android:name="com.hungryanimals.john.HelpGFX"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape"> 
+            <intent-filter>
+                <action android:name="com.hungryanimals.john.HELPGFX" />
+                <category android:name="android.intent.category.Default" />
+            </intent-filter>
+        </activity>
+        <activity            
+            android:name="com.hungryanimals.john.GameOverPage"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.hungryanimals.john.GAMEOVERPAGE" />
+                <category android:name="android.intent.category.Default" />
+            </intent-filter>
+        </activity>
+        <activity            
+            android:name="com.hungryanimals.john.Play"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.hungryanimals.john.PLAY" />
+                <category android:name="android.intent.category.Default" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
